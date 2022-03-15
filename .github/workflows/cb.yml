@@ -3,13 +3,13 @@ on:
   workflow_dispatch:
     inputs:
       - branch:
-         description: 'branch'
-         default: 'new_branch'
-         required: false
-         type: string
-      sha:
-        type: string
-        required: true
+          description: 'branch'
+          default: 'new_branch'
+          required: false
+          type: string
+        sha:
+          type: string
+          required: true
 
 jobs:
   create-branch:

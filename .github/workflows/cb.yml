@@ -20,4 +20,4 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           branch: ${{ inputs.branch }}
-          sha: {{ inputs.sha }}
+          sha: ${{ inputs.sha }}

@@ -20,4 +20,4 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           branch: 'ana_are_mere'
-          sha: 'v1.0.0'
+          sha: '2254654365922059404596c8fbcb5b95f4f1bd1e'

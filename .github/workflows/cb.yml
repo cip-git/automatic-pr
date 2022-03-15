@@ -3,8 +3,8 @@ on:
   workflow_dispatch:
     inputs:
       branch:
-        description: 'branch'
-        default: 'new_branch'
+        description: "branch"
+        default: "new_branch"
         required: false
         type: string
       # sha:

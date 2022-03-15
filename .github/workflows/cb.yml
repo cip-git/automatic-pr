@@ -9,7 +9,7 @@ on:
         type: string
       sha:
         type: string
-        required: true
+        required: false
 
 jobs:
   create-branch:
@@ -19,5 +19,5 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          branch: ${{ inputs.branch }}
-          sha: ${{ inputs.sha }}
+          branch: 'ana_are_mere'
+          sha: 'v1.0.0'

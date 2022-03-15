@@ -7,6 +7,6 @@ jobs:
   say-hello:
     runs-on: ubuntu-latest
     steps:
-      name: say-hello
-      run: echo "Hello from my first action"
-      shell: bash
+      - name: say-hello-step
+        run: echo "Hello from my first action"
+        shell: bash

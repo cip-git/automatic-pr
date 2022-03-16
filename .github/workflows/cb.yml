@@ -19,5 +19,5 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          branch: ${{ inputs.branch }}
+          branch: ${{ github.event.inputs.branch }}
           # sha: '2254654365922059404596c8fbcb5b95f4f1bd1e'

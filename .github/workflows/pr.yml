@@ -1,11 +1,12 @@
 name: Create PR
 on:
   workflow_dispatch:
-    inputs:
-      source:
-        description: "source branch"
-        type: string
-        required: true
+    
+inputs:
+  source:
+    description: "source branch"
+    type: string
+    required: true
 
 jobs:
   action-pull-request:

@@ -1,6 +1,10 @@
 name: Create PR
 on:
-  workflow_dispatch
+  workflow_dispatch:
+    inputs:
+      source-branch:
+        type: string
+        required: true
 
 
 jobs:
@@ -24,5 +28,5 @@ jobs:
           old_string: "**Write you description here**"
           new_string: ${{ github.event.commits[0].message }}
           get_diff: true
-          source_branch: "second_branch"
+          source_branch: ${{ inputs.source-branch }}
           target_branch: "main"

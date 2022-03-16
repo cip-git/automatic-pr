@@ -1,10 +1,10 @@
 name: Create PR
 on:
   workflow_dispatch:
-    inputs:
-      source-branch:
-        type: string
-        required: true
+  inputs:
+    source-branch:
+      type: string
+      required: true
 
 
 jobs:
